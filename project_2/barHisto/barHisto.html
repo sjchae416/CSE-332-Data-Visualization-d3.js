@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<title>Bar Chart / Histogram</title>
+		<link rel="stylesheet" href="barHisto.css" />
+	</head>
+	<body>
+		<div class="dropdown">
+			<button class="dropbtn" id="dropdown-btn">Dropdown</button>
+
+			<button class="resetbtn" id="reset-btn">Reset</button>
+
+			<div id="myDropdown" class="dropdown-content">
+				<a onclick="getValue(this)" href="#">track_name</a>
+				<a onclick="getValue(this)" href="#">artist_names</a>
+				<a onclick="getValue(this)" href="#">peak_rank</a>
+				<a onclick="getValue(this)" href="#">weeks_on_chart</a>
+				<a onclick="getValue(this)" href="#">danceability</a>
+				<a onclick="getValue(this)" href="#">energy</a>
+				<a onclick="getValue(this)" href="#">loudness</a>
+				<a onclick="getValue(this)" href="#">speechiness</a>
+				<a onclick="getValue(this)" href="#">instrumentalness</a>
+				<a onclick="getValue(this)" href="#">tempo</a>
+			</div>
+		</div>
+
+		<div id="draw"></div>
+	</body>
+
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+
+	<script src="barHisto.js"></script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<title>Scatterplot</title>
+		<link rel="stylesheet" href="scatter.css" />
+	</head>
+	<body>
+		<div class="dropdown">
+			<button class="dropbtn" id="dropdown-btn">Dropdown1</button>
+
+			<div id="myDropdown" class="dropdown-content">
+				<a onclick="getValue(this)" href="#">track_name</a>
+				<a onclick="getValue(this)" href="#">artist_names</a>
+				<a onclick="getValue(this)" href="#">peak_rank</a>
+				<a onclick="getValue(this)" href="#">weeks_on_chart</a>
+				<a onclick="getValue(this)" href="#">danceability</a>
+				<a onclick="getValue(this)" href="#">energy</a>
+				<a onclick="getValue(this)" href="#">loudness</a>
+				<a onclick="getValue(this)" href="#">speechiness</a>
+				<a onclick="getValue(this)" href="#">instrumentalness</a>
+				<a onclick="getValue(this)" href="#">stempo</a>
+			</div>
+
+			<button class="dropbtn2" id="dropdown-btn2">Dropdown2</button>
+
+			<div id="myDropdown2" class="dropdown-content2">
+				<a onclick="getValue2(this)" href="#">track_name</a>
+				<a onclick="getValue2(this)" href="#">artist_names</a>
+				<a onclick="getValue2(this)" href="#">peak_rank</a>
+				<a onclick="getValue2(this)" href="#">weeks_on_chart</a>
+				<a onclick="getValue2(this)" href="#">danceability</a>
+				<a onclick="getValue2(this)" href="#">energy</a>
+				<a onclick="getValue2(this)" href="#">loudness</a>
+				<a onclick="getValue2(this)" href="#">speechiness</a>
+				<a onclick="getValue2(this)" href="#">instrumentalness</a>
+				<a onclick="getValue2(this)" href="#">tempo</a>
+			</div>
+
+			<button class="prodbtn" id="produce-btn">Produce</button>
+
+			<button class="toggbtn" id="toggle-btn">toggle</button>
+
+			<button class="resetbtn" id="reset-btn">Reset</button>
+
+		</div>
+
+		<div id="draw">
+			<!-- <svg width="1690" height="890"></svg> -->
+		</div>
+	</body>
+
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+
+	<script src="scatter.js"></script>
+</html>

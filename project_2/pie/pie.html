@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<title>Pie Chart</title>
+		<link rel="stylesheet" href="pie.css" />
+	</head>
+	<body>
+		<div class="dropdown">
+			<button class="dropbtn" id="dropdown-btn">Dropdown</button>
+
+			<button class="resetbtn" id="reset-btn">Reset</button>
+
+			<div id="myDropdown" class="dropdown-content">
+				<a onclick="getValue(this)" href="#">track_name</a>
+				<a onclick="getValue(this)" href="#">artist_names</a>
+				<a onclick="getValue(this)" href="#">peak_rank</a>
+				<a onclick="getValue(this)" href="#">weeks_on_chart</a>
+				<a onclick="getValue(this)" href="#">danceability</a>
+				<a onclick="getValue(this)" href="#">energy</a>
+				<a onclick="getValue(this)" href="#">loudness</a>
+				<a onclick="getValue(this)" href="#">speechiness</a>
+				<a onclick="getValue(this)" href="#">instrumentalness</a>
+				<a onclick="getValue(this)" href="#">tempo</a>
+			</div>
+		</div>
+
+		<div id="draw">
+			<svg width="1690" height="890">
+				<!-- <path d="M150 0 L75 200 L225 200 Z" /> -->
+			</svg>
+		</div>
+	</body>
+
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+
+	<script src="pie.js"></script>
+</html>

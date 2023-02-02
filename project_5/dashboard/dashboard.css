@@ -1,0 +1,100 @@
+.container {
+	width: 1600px;
+	height: 900px;
+	border: 5px solid black;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+}
+
+.container-top {
+	width: 1600px;
+	height: 450px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.container-bottom {
+	width: 1600px;
+	height: 450px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.graph {
+	width: 750px;
+	height: 400px;
+	/* border: 2px dotted blue; */
+}
+
+/* NOTE histo style */
+/* Dropdown Button */
+.dropbtn {
+	background-color: #3498db;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	margin-right: 150px;
+}
+
+.resetbtn {
+	background-color: #db3434;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+	background-color: #2980b9;
+}
+
+.resetbtn:hover,
+.resetbtn:focus {
+	background-color: #bc2929;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+	display: block;
+}
+/* NOTE histo style */
